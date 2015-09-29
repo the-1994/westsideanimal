@@ -1,26 +1,61 @@
+$font-one: 'Poppins', sans-serif;
+$font-two: 'Playfair Display', serif;
+$background-color: #F8F5E6;
+$main-color: #003F5E;
+$secondary-color:#95C9DB;
+
 body {
-    font-family: sans-serif;
-    line-height: 1.4em;
-    background: #FFF;
+    font-family: $font-one;
+    line-height: 1.4;
+    background: #F8F5E6;
     color: #444;
+	  
+//	  font-family: 'Raleway', sans-serif;
 }
 
-h1 { font-size: 2em; margin: .67em 0 }
-h2 { font-size: 1.5em; margin: .75em 0 }
-h3 { font-size: 1.17em; margin: .83em 0 }
-h5 { font-size: .83em; margin: 1.5em 0 }
-h6 { font-size: .75em; margin: 1.67em 0 }
+.site-wrap {
+  /* Critical position and size styles */
+  min-height: 100%;
+  min-width: 100%;
+  background-color: #F8F5E6; /* Needs a background or else the nav will show through */
+  position: relative;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  z-index: 1;
+	margin-top: 82px;
+  
+  /* non-critical apperance styles */
+//  padding: 4em 0;
+
+}
+
+h1 { font-size: 2em;}
+h2 { font-size: 1.5em;
+	font-family: $font-two;
+	margin-bottom: .5rem;
+	color: $secondary-color;
+}
+h3 { font-size: 1.17em;
+font-family: $font-two;}
+h5 { font-size: .83em;}
+h6 { font-size: .75em;}
 h1, h2, h3, h4,
 h5, h6 {
   font-weight: bolder
 }
 
 p {
-  line-height: 1.4em;
+  line-height: 1.7;
   margin-bottom: 1em;
+	font-weight: 300;
 }
 
 a {
   color: #00AAEE;
   text-decoration: none;
+}
+
+.h1-page-header {
+	text-align: center;
 }

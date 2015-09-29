@@ -1,0 +1,56 @@
+.hero-container {
+	background: url(https://s3-us-west-2.amazonaws.com/1994/dog-grass.jpg) no-repeat center center fixed;
+	background-size: cover;
+	height: 100vh;
+
+	h1 {
+		padding: 1em .5em;
+		font-size: 2.4em;
+		max-width: 15em;
+		color: whitesmoke;
+		float: right;
+		margin: 6em .5em;
+		background-color: rgba(0, 0, 0, .5);
+		font-family: 'Open Sans', sans-serif;
+		letter-spacing: 1px;
+	}
+
+}
+
+.section-1 {
+	padding: 6rem 1.5rem;
+	h2 {
+		text-align: center;
+		font-size: 2.6rem;
+	}
+	p {
+		max-width: 40rem;
+		font-size: 1.4rem;
+		margin: 0 auto;
+	
+	}
+
+}
+
+$box-width: 250px;
+
+.section-2-flex {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	max-width: 1250px;
+	margin: 0 auto;
+	
+	
+	.flex-child {
+		max-width: 350px;
+		img {
+			height: $box-width;
+			width: 350px;
+		}
+		p {
+			font-size: .9em;
+		}
+	}
+}
