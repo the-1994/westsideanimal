@@ -1,3 +1,3 @@
 app.showInitialPage = function () {
-  console.log('initialize');
+   jQuery("#accordion").accordion();
 };

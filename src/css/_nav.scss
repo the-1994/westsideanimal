@@ -27,8 +27,6 @@
 	 margin-left: 2em;
 
 	
-
-	
 	a {
 		font-size: 1.3em;
 		color: #003F5E;
@@ -168,6 +166,10 @@ label[for="nav-trigger"] {
 
 }
 
+.active-nav {
+	border-bottom: 3px solid blue;
+}
+
 
 
 
@@ -186,8 +188,5 @@ body {
     display: none;
 
   }  
-
-
-
 }
 
