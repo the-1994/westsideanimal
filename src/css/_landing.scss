@@ -18,7 +18,7 @@
 }
 
 .section-1 {
-	padding: 6rem 1.5rem;
+	padding: 4rem 1.5rem;
 	h2 {
 		text-align: center;
 		font-size: 2.6rem;
@@ -32,6 +32,10 @@
 
 }
 
+.section-flex-container {
+	padding: 4rem 1rem;
+}
+
 $box-width: 250px;
 
 .section-flex {
@@ -41,6 +45,7 @@ $box-width: 250px;
 	flex-wrap: wrap;
 	max-width: 1250px;
 	margin: 0 auto;
+	padding-top: 1em;
 	
 	
 	.flex-child {
@@ -65,10 +70,14 @@ $box-width: 250px;
 .list-section {
 	max-width: 40em;
 	margin: 0 auto;
-	padding: 1em;
+	padding: 0 1em;
 	min-height: 400px;
 	li {font-size: 1.1em;
 			color: white;
+	}
+	
+	span {display: inline-block;
+		vertical-align:middle;
 	}
 }
 
@@ -85,10 +94,14 @@ $box-width: 250px;
 .list-wrapper {
 	z-index: 101;
 	position: relative;
-	padding-top: 3em;
+	padding: 3em 1em;
 	span {
 		font-size: 1.5em;
 		display: inline-block;
+	}
+	
+	.h2-icon {
+		font-size: 1em;
 	}
 	
 	h2 {
@@ -98,4 +111,11 @@ $box-width: 250px;
 
 .push-right {
 	margin-right: 1em;
+}
+
+
+@media screen and (max-width: 750px) {
+	.section-1 h2, .list-wrapper h2, h2 {
+		font-size: 2rem;
+	}
 }

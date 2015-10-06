@@ -23,7 +23,7 @@ body {
   bottom: 100%;
   left: 0;
   z-index: 1;
-	margin-top: 122px; 
+	margin-top: 114px; 
 //	max-width: 1100px;
 //	margin: 122px auto 0;
   
@@ -33,7 +33,7 @@ body {
 }
 
 h1 { font-size: 2em;}
-h2 { font-size: 1.5em;
+h2 { font-size: 2.3rem;
 	font-family: $font-two;
 	margin-bottom: .5rem;
 	color: $secondary-color;
@@ -72,4 +72,8 @@ a {
 
 .icon {
 	font-family: westside;
+}
+
+.h2-icon {
+	font-size: 1em;
 }

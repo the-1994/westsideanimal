@@ -4,8 +4,8 @@
 }
 
 .vets-page-container {
-	max-width: 1100px;
-	margin: 0 auto;
+//	max-width: 1100px;
+//	margin: 0 auto;
 }
 
 .about-intro {
@@ -45,9 +45,11 @@
 	padding-top: 1em;
 	
 	img {
-		width: 275px;
+		width: 250px;
 		height: auto;
 		border-radius: 100%;
+//		border: 2px solid $secondary-color;
+		background-color: #111;
 	}
 	
 }
@@ -55,12 +57,18 @@
 .about-person-content-wrapper {
 	display: inline-block;
 	width: 70%;
+	max-width: 1100px;
+	margin: 0 auto;
 
 }
 
 .name, .about-person-title {
  text-align: left;
 
+}
+
+.name, .about-person-title {
+	color: $main-color;
 }
 
 .name { 
@@ -72,15 +80,16 @@
 }
 
 .about-person-title {
- font-size: 1.25em;
+ font-size: 1.2em;
  padding-bottom: .5em;
- font-weight: 700;
+ font-weight: 400;
  text-transform: uppercase;
-// color: $mati-yellow;
+ font-style: italic;
+// text-transform: lowercase;
 }
 
 .about-person-p {
-//	font-family: $secondary-font;
+
 	font-size: 1.3em;
 }
 
@@ -88,7 +97,19 @@
 	color: red;
 	font-style: italic;
 	font-size: .9em;
+	cursor: pointer;
+}
 
+.team-pic {
+	min-height: 400px;
+	background: url(http://www.w3.org/2013/11/team-photo.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.team-caption {
+	margin-top: 3em;
+	text-align: center;
+	font-weight: 400;
 }
 
 @media screen and (max-width: 1077px) {
