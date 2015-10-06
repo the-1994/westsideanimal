@@ -1,0 +1,34 @@
+.philosophy-wrap {
+	min-height: 100px;
+	padding: 2em;
+}
+
+
+
+.philosophy-container {
+	margin: 0 auto;
+	max-width: 1100px;
+}
+
+
+.cat-photo {
+	display: inline-block;
+	width: 350px;
+	height: 350px;
+	border-radius: 50%;
+	opacity: .9;
+	float: left;
+	shape-outside:circle();
+	margin: 1em;
+}
+
+.philosophy-text {
+	/*width: 50rem;*/
+	max-width: 90%;
+	margin: 0 auto;
+	clear: right;
+}
+
+
+
+
