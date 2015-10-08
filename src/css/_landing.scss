@@ -50,16 +50,47 @@ $box-width: 250px;
 	
 	.flex-child {
 		max-width: 350px;
+				text-align: center;
 		img {
 			height: $box-width;
 			width: 350px;
 		}
 		p {
 			font-size: .9em;
+			text-align: left;
+		}
+		
+		h3 {text-align: left;}
+		
+		a {
+			margin-bottom: 2em;
 		}
 	}
+	
+	.store-link {
+		display: inline-block;
+		margin-top: .4em;
+		
+	img {
+		width: 150px;
+		height: auto;		
+	}
+}
+	
 }
 
+	.pet-button {
+//		border: 1px solid $secondary-color;d
+		display: inline-block;
+		margin-top: .5em;
+		padding: .4em 1em;
+		color: white;
+		background-color: $secondary-color;
+	}
+
+.pet-button:hover {
+	background-color: $main-color;
+}
 
 .section-list-container {
 	background:url(https://s3-us-west-2.amazonaws.com/westside-animal/dog-prarie.jpg) no-repeat center center fixed;
@@ -112,6 +143,50 @@ $box-width: 250px;
 .push-right {
 	margin-right: 1em;
 }
+
+.testimonial-ul {
+//	padding: 2em;
+	text-align: center;
+	font-weight: 300;
+	max-width: 45em;
+	margin: 0 auto;
+	@include center(xy);
+	position: absolute;
+	
+	li {
+	@include center(xy);
+	position: absolute;
+	min-width:45em;
+	max-width: 95%;
+	}
+
+
+	
+	blockquote {
+		font-style: italic;
+		font-size: 1.3em;
+		color: white;
+		padding: 0 1em;
+		vertical-align: middle;
+	}
+
+}
+
+.section-testimonial {
+	padding: 2em 0 1.4em;
+	background-color: $secondary-color;
+	position: relative;
+	min-height: 280px;
+}
+
+.quote {
+	p {
+		margin: 0;
+		color: white;
+	}
+}
+
+
 
 
 @media screen and (max-width: 750px) {

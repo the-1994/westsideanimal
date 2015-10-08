@@ -1,6 +1,7 @@
 .philosophy-wrap {
 	min-height: 100px;
-	padding: 2em;
+	padding: 1em;
+	min-height: 700px;
 }
 
 
@@ -27,8 +28,17 @@
 	max-width: 90%;
 	margin: 0 auto;
 	clear: right;
+	text-align: left;
 }
 
+@media screen and (max-width: 735px) {
+	
+	.cat-photo {
+	  display: block;
+		float:none;
+		margin: 1em auto;
+	}
+}
 
 
 

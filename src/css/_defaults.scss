@@ -1,14 +1,24 @@
 $font-one: 'Poppins', sans-serif;
 $font-two: 'Bitter', serif;
 $background-color: #F8F5E6;
+$background-color:#FCEBB6;
 $main-color: #003F5E;
+$main-color:#C64A02;
+$main-color: #449BB5;
 $secondary-color:#95C9DB;
+$secondary-color:#F07818;
+$secondary-color: #043D5D;
+$tertiary-color: #68C39F;
+$quad-color: #5E412F;
+
 
 body {
     font-family: $font-one;
     line-height: 1.4;
     background: #F8F5E6;
     color: #444;
+	  -webkit-font-smoothing:antialiased;
+	  -moz-osx-font-smoothing: grayscale;
 	  
 //	  font-family: 'Raleway', sans-serif;
 }
@@ -23,7 +33,7 @@ body {
   bottom: 100%;
   left: 0;
   z-index: 1;
-	margin-top: 114px; 
+	margin-top: 112px; 
 //	max-width: 1100px;
 //	margin: 122px auto 0;
   
@@ -36,7 +46,7 @@ h1 { font-size: 2em;}
 h2 { font-size: 2.3rem;
 	font-family: $font-two;
 	margin-bottom: .5rem;
-	color: $secondary-color;
+	color: $main-color;
 	text-align: center;
 }
 h3 { font-size: 1.17em;
@@ -77,3 +87,32 @@ a {
 .h2-icon {
 	font-size: 1em;
 }
+
+//mixins 
+
+
+@mixin center($xy:xy) {
+@if $xy == xy {
+left: 50%;
+top: 50%;
+bottom: auto;
+right: auto;
+@include transform(translateX(-50%) translateY(-50%));
+}
+@else if $xy == x {
+left: 50%;
+right: auto;
+@include transform(translateX(-50%));
+}
+@else if $xy == y {
+top: 50%;
+bottom: auto;
+@include transform(translateY(-50%));
+}
+}
+@mixin transform($attrs) {
+-webkit-transform: $attrs;
+-moz-transform: $attrs;
+-ms-transform: $attrs;
+transform: $attrs;
+}		

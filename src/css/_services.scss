@@ -1,4 +1,18 @@
+.services-container {
+	background: url() no-repeat center center fixed;
+
+}
+
+
+
+
 .accordion {
+	 
 		max-width: 80%;
-    margin: 0 auto;
+    margin: 2em auto;
+}
+
+.accordion-header {
+	background-color: $main-color;
+  color: white;
 }

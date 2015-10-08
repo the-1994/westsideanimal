@@ -30,8 +30,9 @@
 .person {
 	max-width: 1100px;
 	margin: 0 auto;
-	padding: 2em;
+	padding: 1em 0 2em;
 	display: flex;
+	flex-wrap: wrap;
 
 }
 
@@ -45,11 +46,11 @@
 	padding-top: 1em;
 	
 	img {
-		width: 250px;
+		width: 270px;
 		height: auto;
 		border-radius: 100%;
-//		border: 2px solid $secondary-color;
-		background-color: #111;
+		border: 3px solid $secondary-color;
+		background-color: #555;
 	}
 	
 }
@@ -68,7 +69,11 @@
 }
 
 .name, .about-person-title {
-	color: $main-color;
+	color: $quad-color;
+}
+
+.about-person-title {
+	color: $quad-color;
 }
 
 .name { 
@@ -110,19 +115,46 @@
 	margin-top: 3em;
 	text-align: center;
 	font-weight: 400;
+	font-size: .8em;
 }
 
-@media screen and (max-width: 1077px) {
+@media screen and (max-width: 1079px) {
 	
 	.about-person-content-wrapper {
 		width: 90%;
 
-	.about-person-p {
+ p {
 	  width: 100%;
+		text-align: left;
 	}
 }
 	
+	.flex-item-1 {
+		order: 2;
+	}
+	
+	.flex-item-2 {
+		order: 1;
+	}
+	
+		.about-img-wrap {
+		padding-right: 0;
+			margin: 0 auto;
+	
+	}
+	
+	.person, .name, .about-person-title {
+		text-align: center;
+	}
+	
 }
+
+@media screen and (max-width:750px) {
+	.about-img-wrap {
+		margin-bottom: 1em;
+	}
+}
+
 	
 @media screen and (max-width: 650px) {
 	.about-img-wrap {

@@ -1,0 +1,32 @@
+#instafeed {
+	text-align: center;
+	padding-bottom: 2em;
+}
+
+.photo-wrapper {
+	max-width: 320px;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 .5em .3em;;
+	
+}
+
+.gallery-header {
+	padding: 1em;
+	text-align: center;
+	p {
+		text-align: center;
+	}
+}
+
+.photo-caption {
+	font-size: .8em;
+	max-height: 3em;
+	overflow: hidden;
+}
+
+@media screen and (max-width:750px) {
+	.gallery-header {
+		padding-top: 100px;
+	}	
+}
