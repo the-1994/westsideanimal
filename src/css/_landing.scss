@@ -58,9 +58,12 @@ $box-width: 250px;
 		p {
 			font-size: .9em;
 			text-align: left;
+			min-height: 172px;
 		}
 		
-		h3 {text-align: left;}
+		h3 {text-align: left;
+			a {color: $secondary-color;}
+		}
 		
 		a {
 			margin-bottom: 2em;
@@ -113,7 +116,7 @@ $box-width: 250px;
 }
 
 .overlay {
- background-color: rgba(0,0,0,.4);
+ background-color: rgba(0,0,0,.6);
  position: absolute;
 	top: 0;
 	left: 0;
@@ -193,4 +196,33 @@ $box-width: 250px;
 	.section-1 h2, .list-wrapper h2, h2 {
 		font-size: 2rem;
 	}
+	
+	.testimonial-ul {
+//	padding: 2em;
+		position: relative;
+		transform: translate(0);
+		top: auto;
+		left: auto;
+		
+	
+	
+	li {
+top: auto;
+left: auto;
+transform: translate(0);
+min-width: auto;
+	position: relative;
+		
+	}
+
+
+}
+
+.section-testimonial {
+	height: auto;
+}
+	
+	
+	
+	
 }

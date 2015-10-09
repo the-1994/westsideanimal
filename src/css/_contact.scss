@@ -1,11 +1,20 @@
 .contact-container {
 	padding-top: 2em;
+	background: url(https://static.pexels.com/photos/4933/lake-animals-dogs-pets.jpg) no-repeat center center fixed;
+	background-size: cover;
+	color: white;
 	
 	a {
 		color: $main-color;
+		font-weight: 700;
 	
 	}
 
+}
+
+.contact-content-wrapper {
+	position: relative;
+	z-index: 1000;
 }
 
 .flex-two {
@@ -36,9 +45,11 @@
 
 .get-directions {
 	display: block;
-	border: 1px solid;
-	width: 9.25em;
-	padding: .3em 1em;
+//	border: 1px solid;
+	width: 9.75em;
+	padding: .3em 1em .2em;
+	background-color: $main-color;
+	color: white !important;
 
 }
 
