@@ -1,18 +1,43 @@
 .services-container {
-	background: url() no-repeat center center fixed;
+	background: url(https://s3-us-west-2.amazonaws.com/westside-animal/cat1.jpg) no-repeat center center fixed;
+	background-size: cover;
+	min-height: 80vh;
+	position: relative;
+}
 
+.services-content-wrapper {
+	position: relative;
+	z-index: 1000;
+	padding-top: 2em;
+	.contact-p {color: white;
+				z-index: 10;
+	}
 }
 
 
 
-
 .accordion {
-	 
 		max-width: 80%;
-    margin: 2em auto;
+    margin: 4em auto 0;
+	 background-color: transparent;
+
 }
 
 .accordion-header {
 	background-color: $main-color;
   color: white;
+}
+
+.accordion-header:hover  {
+	background-color: $secondary-color;
+	color: white;
+}
+
+.accordion-item.active .accordion-header {
+	background-color: $tertiary-color;
+}
+
+.accordion-content {
+	background-color: rgba(0,0,0,.6);
+	color: white;
 }

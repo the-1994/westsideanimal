@@ -1,11 +1,18 @@
 .contact-container {
 	padding-top: 2em;
+	background: url(https://static.pexels.com/photos/4933/lake-animals-dogs-pets.jpg) no-repeat center center fixed;
+	background-size: cover;
 	
 	a {
 		color: $main-color;
 	
 	}
 
+}
+
+.contact-content-wrapper {
+	position: relative;
+	z-index: 1000;
 }
 
 .flex-two {
