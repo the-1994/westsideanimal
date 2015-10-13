@@ -4,9 +4,16 @@
 }
 
 .vets-page-container {
-//	max-width: 1100px;
-//	margin: 0 auto;
+    background: url(https://images.unsplash.com/photo-1417028441456-f283323fe2d6?q=80&fm=jpg&s=45d3a9f00a81990a546aa9fdde7d759e) no-repeat center center fixed;
+	background-size: cover;
+	color: white;
 }
+
+.vets-content-wrapper {
+	position:relative;
+	z-index:1000;
+}
+
 
 .about-intro {
 //	color: $mati-white;
@@ -50,7 +57,7 @@
 		height: auto;
 		border-radius: 100%;
 		border: 3px solid $secondary-color;
-		background-color: #555;
+		background-color: rgba(0,0,0,.3);
 	}
 	
 }
@@ -69,7 +76,7 @@
 }
 
 .name, .about-person-title {
-	color: $secondary-color;
+	color: $main-color;
 }
 
 .name { 
@@ -103,8 +110,10 @@
 
 .team-pic {
 	min-height: 400px;
-	background: url(http://howtowriteabusinessplan.com/wp-content/uploads/2013/02/Ovelin-team-how-to-write-a-business-plan.jpg) no-repeat center center fixed;
+	background: url(http://sanfacon.com/art/illustrations/kiss_images/kiss75.jpg) no-repeat center center fixed;
 	background-size: cover;
+
+
 }
 
 .team-caption {

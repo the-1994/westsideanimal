@@ -1,43 +1,50 @@
 .philosophy-wrap {
-	min-height: 100px;
-	padding: 1em;
-	min-height: 500px;
+//	min-height: 100px;
+//	padding: 2em;
+
 
 }
 
 
 
 .philosophy-container {
-	margin: 0 auto;
-	max-width: 1100px;
+//	padding-top: 2em;
+//	max-width: 1100px;
+	min-height: 74vh;
+	color: white;
+	background: url(https://s3-us-west-2.amazonaws.com/krista-anne/highfive.jpg) no-repeat center center fixed;
+	background-size: cover;
+	position: relative;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	
+	
+	p {margin-bottom: 0;}
+
 }
 
-
-.cat-photo {
-	display: inline-block;
-	width: 350px;
-	height: 350px;
-	border-radius: 50%;
-	opacity: .9;
-	float: left;
-	shape-outside:circle();
-	margin: 1em;
-}
 
 .philosophy-text {
 	/*width: 50rem;*/
-	max-width: 90%;
-	margin: 0 auto;
-	clear: right;
+	padding: 0 1em;
+	max-width: 60rem;
+	margin: -50px auto 0;
+//	clear: right;
 	text-align: left;
+	position: relative;
+	z-index: 1000;
+	font-size: 1.2em;
 }
 
 @media screen and (max-width: 735px) {
 	
-	.cat-photo {
-	  display: block;
-		float:none;
-		margin: 1em auto;
+	.philosophy-container {
+		padding: 5em 0 2em;
+	}
+	
+	.philosophy-text {
+		margin-top: 0;
 	}
 }
 

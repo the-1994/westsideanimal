@@ -1,5 +1,5 @@
 .hero-container {
-	background: url(https://s3-us-west-2.amazonaws.com/westside-animal/puppy.jpeg) no-repeat center center fixed;
+	background: url(https://s3-us-west-2.amazonaws.com/westside-animal/puppy.jpg) no-repeat center center fixed;
 	background-size: cover;
 	height: 100vh;
 
@@ -77,11 +77,9 @@ $box-width: 250px;
 	img {
 		width: 150px;
 		height: auto;		
-	}
+	} 
+ }	
 }
-	
-}
-
 	.pet-button {
 //		border: 1px solid $secondary-color;d
 		display: inline-block;
@@ -105,9 +103,12 @@ $box-width: 250px;
 	max-width: 40em;
 	margin: 0 auto;
 	padding: 0 1em;
-	min-height: 400px;
+
 	li {font-size: 1.1em;
 			color: white;
+			position: relative;
+		  margin-bottom: .5em;
+		  margin-left: 2em;
 	}
 	
 	span {display: inline-block;
@@ -132,6 +133,9 @@ $box-width: 250px;
 	span {
 		font-size: 1.5em;
 		display: inline-block;
+		position: absolute;
+		left: -40px;
+		top: 0;
 	}
 	
 	.h2-icon {
@@ -193,36 +197,43 @@ $box-width: 250px;
 
 
 @media screen and (max-width: 750px) {
-	.section-1 h2, .list-wrapper h2, h2 {
-		font-size: 2rem;
-	}
-	
+		.section-1 h2, .list-wrapper h2, h2 {
+			font-size: 2rem;
+		}
+
+		.testimonial-ul {
+
+			blockquote {
+				margin: 0 auto;
+				max-width: 550px
+
+			}
+		}
+
+	.section-testimonial {
+		min-height: 400px;
+	}	
+}
+
+@media screen and (max-width: 550px) {
 	.testimonial-ul {
-//	padding: 2em;
-		position: relative;
-		transform: translate(0);
-		top: auto;
-		left: auto;
-		
-	
-	
-	li {
-top: auto;
-left: auto;
-transform: translate(0);
-min-width: auto;
-	position: relative;
-		
-	}
+			blockquote {
+				max-width: 470px
+			}
+		}
+	.section-testimonial {
+		min-height: 480px;
+	}	
+}
 
+@media screen and (max-width: 450px) {
+	.testimonial-ul {
+			blockquote {
+				margin: 0 auto;
+				max-width: 300px;
+				font-size: 1.1em;
+			}
+		}
 
 }
 
-.section-testimonial {
-	height: auto;
-}
-	
-	
-	
-	
-}
