@@ -17,6 +17,17 @@
 
 }
 
+.aaha-link {
+	position: absolute;
+	top: 25px;
+	right: 5px;
+	.aaha-hero {
+		width: 40px;
+		height: 40px;
+	}
+
+}
+
 .section-1 {
 	padding: 4rem 1.5rem;
 	h2 {
@@ -87,6 +98,7 @@ $box-width: 250px;
 		padding: .4em 1em;
 		color: white;
 		background-color: $secondary-color;
+		border-radius: .2em;
 	}
 
 .pet-button:hover {
@@ -213,6 +225,19 @@ $box-width: 250px;
 	.section-testimonial {
 		min-height: 400px;
 	}	
+	
+	.aaha-link {
+		display: none;
+	}
+	
+	.aaha-link-2 {
+		.aaha-hero {
+			width: 20%;
+			height: auto;
+			position: absolute;
+			bottom: 0;
+		}
+	}
 }
 
 @media screen and (max-width: 550px) {
