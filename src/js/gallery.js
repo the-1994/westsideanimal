@@ -1,15 +1,15 @@
 
 $(document).ready(function() {
-	
+
  var feed = new Instafeed({
         get: 'tagged',
-        tagName: 'puppy',
+        tagName: 'westsidepetsdurham',
         clientId: '5c322ae088b94202916fd5b0cf701f84',
 	 			resolution:'low_resolution',
 	      template: '<div class="photo-wrapper"><a target="_blank" class="pet-photo" href="{{link}}"><img src="{{image}}" /></a><p class="photo-caption">{{caption}}</p></div>'
     });
     feed.run();
-	
+
 });
 
 

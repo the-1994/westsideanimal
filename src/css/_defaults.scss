@@ -20,7 +20,7 @@ body {
     color: #444;
 	  -webkit-font-smoothing:antialiased;
 	  -moz-osx-font-smoothing: grayscale;
-	  
+
 //	  font-family: 'Raleway', sans-serif;
 }
 
@@ -34,10 +34,11 @@ body {
   bottom: 100%;
   left: 0;
   z-index: 1;
-	margin-top: 112px; 
+	margin-top: 112px;
+  overflow-x:hidden;
 //	max-width: 1100px;
 //	margin: 122px auto 0;
-  
+
   /* non-critical apperance styles */
 //  padding: 4em 0;
 
@@ -89,7 +90,7 @@ a {
 	font-size: 1em;
 }
 
-//mixins 
+//mixins
 
 
 @mixin center($xy:xy) {
@@ -116,4 +117,4 @@ bottom: auto;
 -moz-transform: $attrs;
 -ms-transform: $attrs;
 transform: $attrs;
-}		
+}

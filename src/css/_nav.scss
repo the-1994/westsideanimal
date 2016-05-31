@@ -12,6 +12,17 @@
 	border-bottom: 1px white solid;
 }
 
+.nav-logo-mobile-wrapper {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    padding: .5em;
+}
+
+.nav-logo-mobile {
+    width: 200px;
+}
 .desktop-nav {
   display: flex;
   flex-direction: row;
@@ -23,11 +34,11 @@
 
 
 .desk-nav-item {
-	
+
 		margin-top: 3.2em;
 	 padding: 0 .75em;
 
-	
+
 	a {
 		font-size: 1.1em;
 		color: $background-color;
@@ -72,11 +83,16 @@
   bottom: 0;
   left: 0;
   z-index: 0;
-  
+
   /* non-critical appearance styles */
   list-style: none;
   background: $secondary-color;
   display: none;
+  opacity: 0;
+}
+
+.nav-shower {
+  opacity: 1;
 }
 
 /* Navigation Menu - List items */
@@ -118,7 +134,7 @@ label[for="nav-trigger"] {
   position: fixed;
   left: 15px; top: 15px;
   z-index: 2;
-  
+
   /* non-critical apperance styles */
   height: 30px;
   width: 30px;
@@ -126,6 +142,7 @@ label[for="nav-trigger"] {
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6' fill='#449BB5'/><rect y='24' width='30' height='6' fill='#449BB5'/><rect y='12' width='30' height='6' fill='#449BB5'/></svg>");
   background-size: contain;
   display: none;
+  padding: 0;
 }
 
 svg {
@@ -164,6 +181,8 @@ svg {
 	background-color: $main-color;
 	color: white;
 	padding: 2em 0;
+  position: relative;
+  z-index: 1000;
 	a {
 		color: white;
 	}
@@ -176,7 +195,7 @@ svg {
 .links {
 	border-right: 1px solid white;
 	padding-right: 1em;
-	
+
 }
 
 .footer-section-2 {
@@ -193,7 +212,7 @@ svg {
   li {
     display:inline;
   }
- 
+
 	a {
 		font-size: 2em;
 		margin-right: .1em;
@@ -231,15 +250,19 @@ body {
   label[for="nav-trigger"], .navigation{
     display: block;
   }
-	
-	.site-wrap {
+
+  .nav-logo-mobile-wrapper {
+      display: block;
+  }
+
+  .site-wrap {
 		margin-top: 0px;
-	}
+  }
 
   .desktop-nav-container {
     display: none;
-  }  
-	
+  }
+
 	.footer-social-links{
 	border-left: 1px solid white;
 	padding-left: 1em;
@@ -248,10 +271,9 @@ body {
   li {
     display:block;
   }
- 
+
 }
 		.aaha {
 			margin-left: 4px;
-		}	
+		}
 }
-
